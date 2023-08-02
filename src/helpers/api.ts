@@ -10,6 +10,6 @@ export const API = {
 		getAll: '/api/api/product/',
 		getByID: '/api/api/product/',
 		delete: '/api/api/product/',
-		update: '/api/api/product/update',
+		update: '/api/api/product/update/',
 	},
 };

@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { HomePage } from './pages/Home';
 import { Layout } from './layout/Layout';
 import { ProductsPage } from './pages/Products';
 import { LoginPage } from './pages/Auth/Login';
@@ -13,9 +12,8 @@ function App(): JSX.Element {
 			<AuthProvider>
 				<Routes>
 					<Route path="/" element={<Layout />}>
-						<Route index element={<HomePage />}></Route>
-						<Route path="/home" element={<HomePage />}></Route>
 						<Route element={<ProtectRoutes />}>
+							<Route index element={<ProductsPage />}></Route>
 							<Route path="/products" element={<ProductsPage />}></Route>
 						</Route>
 					</Route>

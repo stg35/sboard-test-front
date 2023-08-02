@@ -7,9 +7,8 @@ export const Wrapper = styled.div`
 	min-height: 100vh;
 	gap: 40px 30px;
 	grid-template-areas:
-		'. header header .'
-		'. sidebar body .'
-		'footer footer footer footer';
+		'header header header header'
+		'. sidebar body .';
 `;
 
 export const BodyGridArea = styled.div`

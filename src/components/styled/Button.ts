@@ -3,6 +3,8 @@ import { styled } from 'styled-components';
 export const Button = styled.button`
 	display: inline-block;
 
+	width: 100px;
+
 	box-sizing: border-box;
 	padding: 10px;
 

@@ -72,7 +72,9 @@ export const RegisterPage = (): JSX.Element => {
 						aria-invalid={errors.password ? 'true' : 'false'}
 					/>
 					{errors.password?.type === 'required' && <ErrorSpan>{errors.password.message}</ErrorSpan>}
-					<Button type="submit">Зарегестрироваться</Button>
+					<Button type="submit" style={{ width: 'auto' }}>
+						Зарегистрироваться
+					</Button>
 					{error === Exceptions.ServerError && (
 						<ErrorSpan style={{ marginTop: '0px' }}>Проблема с подключением</ErrorSpan>
 					)}

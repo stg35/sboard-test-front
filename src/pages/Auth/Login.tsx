@@ -74,7 +74,9 @@ export const LoginPage = (): JSX.Element => {
 						aria-invalid={errors.password ? 'true' : 'false'}
 					/>
 					{errors.password?.type === 'required' && <ErrorSpan>{errors.password.message}</ErrorSpan>}
-					<Button type="submit">Войти</Button>
+					<Button type="submit" style={{ width: 'auto' }}>
+						Войти
+					</Button>
 					{error === Exceptions.ServerError && (
 						<ErrorSpan style={{ marginTop: '0px' }}>Проблема с подключением</ErrorSpan>
 					)}
@@ -82,7 +84,7 @@ export const LoginPage = (): JSX.Element => {
 						<ErrorSpan style={{ marginTop: '0px' }}>Неверный пароль или логин</ErrorSpan>
 					)}
 					<p style={{ textAlign: 'center' }}>
-						<Link to="/auth/register">Зарегестрироваться</Link>
+						<Link to="/auth/register">Зарегистрироваться</Link>
 					</p>
 				</AuthForm>
 			</Card>
